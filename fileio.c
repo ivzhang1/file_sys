@@ -12,6 +12,10 @@ int main(){
   
   printf("%zd\n", read(file_id, k, 20));
   printf("%s\n", k);
-  
+
+
+  int write_size = write(file_id, "woad\n", 5);
+  printf("%d\n", write_size);
+
   return close(file_id);
 }
